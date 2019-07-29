@@ -13,6 +13,7 @@
 		09C6A2DE22EF5BEE00EEB642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C6A2DD22EF5BEE00EEB642 /* Assets.xcassets */; };
 		09C6A2E122EF5BEE00EEB642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C6A2DF22EF5BEE00EEB642 /* LaunchScreen.storyboard */; };
 		09C6A2EC22EF5BEE00EEB642 /* SubModuleLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C6A2EB22EF5BEE00EEB642 /* SubModuleLearningTests.swift */; };
+		09C6A32422EF5E2400EEB642 /* CoreOcrModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C6A32022EF5E1400EEB642 /* CoreOcrModule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +23,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 09C6A2D222EF5BEE00EEB642;
 			remoteInfo = SubModuleLearning;
+		};
+		09C6A31F22EF5E1400EEB642 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09C6A31A22EF5E1400EEB642 /* CoreOcrModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09C6A30022EF5C7200EEB642;
+			remoteInfo = CoreOcrModule;
+		};
+		09C6A32122EF5E1400EEB642 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09C6A31A22EF5E1400EEB642 /* CoreOcrModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09C6A30922EF5C7200EEB642;
+			remoteInfo = CoreOcrModuleTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,6 +51,7 @@
 		09C6A2E722EF5BEE00EEB642 /* SubModuleLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubModuleLearningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C6A2EB22EF5BEE00EEB642 /* SubModuleLearningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubModuleLearningTests.swift; sourceTree = "<group>"; };
 		09C6A2ED22EF5BEE00EEB642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09C6A31A22EF5E1400EEB642 /* CoreOcrModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreOcrModule.xcodeproj; path = CoreOcrModule/CoreOcrModule.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C6A32422EF5E2400EEB642 /* CoreOcrModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +76,11 @@
 		09C6A2CA22EF5BEE00EEB642 = {
 			isa = PBXGroup;
 			children = (
+				09C6A31A22EF5E1400EEB642 /* CoreOcrModule.xcodeproj */,
 				09C6A2D522EF5BEE00EEB642 /* SubModuleLearning */,
 				09C6A2EA22EF5BEE00EEB642 /* SubModuleLearningTests */,
 				09C6A2D422EF5BEE00EEB642 /* Products */,
+				09C6A32322EF5E2400EEB642 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +113,22 @@
 				09C6A2ED22EF5BEE00EEB642 /* Info.plist */,
 			);
 			path = SubModuleLearningTests;
+			sourceTree = "<group>";
+		};
+		09C6A31B22EF5E1400EEB642 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09C6A32022EF5E1400EEB642 /* CoreOcrModule.framework */,
+				09C6A32222EF5E1400EEB642 /* CoreOcrModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09C6A32322EF5E2400EEB642 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +199,12 @@
 			mainGroup = 09C6A2CA22EF5BEE00EEB642;
 			productRefGroup = 09C6A2D422EF5BEE00EEB642 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 09C6A31B22EF5E1400EEB642 /* Products */;
+					ProjectRef = 09C6A31A22EF5E1400EEB642 /* CoreOcrModule.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				09C6A2D222EF5BEE00EEB642 /* SubModuleLearning */,
@@ -171,6 +212,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		09C6A32022EF5E1400EEB642 /* CoreOcrModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CoreOcrModule.framework;
+			remoteRef = 09C6A31F22EF5E1400EEB642 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09C6A32222EF5E1400EEB642 /* CoreOcrModuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CoreOcrModuleTests.xctest;
+			remoteRef = 09C6A32122EF5E1400EEB642 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		09C6A2D122EF5BEE00EEB642 /* Resources */ = {
