@@ -14,9 +14,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.present(Sample.presentAlertController(), animated: true, completion: nil)
     }
 
 
+    @IBAction func benkelode(_ sender: Any) {
+    self.present(Sample.presentAlertController(), animated: true, completion: nil)
+
+    }
 }
 
