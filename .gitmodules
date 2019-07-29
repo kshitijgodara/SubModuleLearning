@@ -1,3 +1,7 @@
 [submodule "CoreOcrModule"]
 	path = CoreOcrModule
 	url = /Users/mac5/CoreOcrModule
+[submodule "Frameworks/Internal"]
+	path = Frameworks/Internal
+	url = /Users/mac5/Desktop/SamplePodProject
+	branch = master
